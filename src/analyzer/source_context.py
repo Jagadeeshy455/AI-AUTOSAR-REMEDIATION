@@ -62,7 +62,7 @@ def extract_context(
 if __name__ == "__main__":
     result = extract_context(
         "sample_project/src/sensor.c",
-        target_line=23,
+        target_line=26,
         context_lines=5
     )
 

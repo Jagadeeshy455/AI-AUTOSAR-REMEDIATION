@@ -8,7 +8,7 @@
             "rule": "MISRA_C_2012_10_3",
             "severity": "warning",
             "file": "src/sensor.c",
-            "line": 23,
+            "line": 26,
             "message": "A value of narrower essential type is assigned to an object of a wider essential type category."
         },
         {
