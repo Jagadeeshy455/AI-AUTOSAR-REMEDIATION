@@ -7,6 +7,7 @@
             "id": "VIOL-001",
             "rule": "MISRA_C_2012_10_3",
             "severity": "warning",
+            "language": "C",
             "file": "src/sensor.c",
             "line": 26,
             "message": "A value of narrower essential type is assigned to an object of a wider essential type category."
@@ -15,16 +16,18 @@
             "id": "VIOL-002",
             "rule": "MISRA_C_2012_12_1",
             "severity": "warning",
+            "language": "C",
             "file": "src/vehicle_control.c",
-            "line": 20,
+            "line": 52,
             "message": "Operator precedence should be made explicit through parentheses."
         },
         {
             "id": "VIOL-003",
             "rule": "MISRA_C_2012_10_8",
             "severity": "warning",
+            "language": "C",
             "file": "src/vehicle_control.c",
-            "line": 31,
+            "line": 40,
             "message": "Composite expression should be explicitly controlled to avoid unintended type conversion."
         }
     ]

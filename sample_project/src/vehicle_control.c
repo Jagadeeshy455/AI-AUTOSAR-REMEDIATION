@@ -41,3 +41,15 @@ uint8_t calculate_temperature_status(uint8_t temperature)
 
     return status;
 }
+
+uint8_t evaluate_vehicle_condition(
+    uint8_t speed_valid,
+    uint8_t temperature_valid
+)
+{
+    uint8_t result;
+
+    result = speed_valid == 1U && temperature_valid == 1U;
+
+    return result;
+}
