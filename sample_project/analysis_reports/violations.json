@@ -1,0 +1,31 @@
+{
+    "tool": "AutomotiveStaticAnalyzer",
+    "project": "Sample Automotive Control Software",
+    "version": "1.0",
+    "violations": [
+        {
+            "id": "VIOL-001",
+            "rule": "MISRA_C_2012_10_3",
+            "severity": "warning",
+            "file": "src/sensor.c",
+            "line": 23,
+            "message": "A value of narrower essential type is assigned to an object of a wider essential type category."
+        },
+        {
+            "id": "VIOL-002",
+            "rule": "MISRA_C_2012_12_1",
+            "severity": "warning",
+            "file": "src/vehicle_control.c",
+            "line": 20,
+            "message": "Operator precedence should be made explicit through parentheses."
+        },
+        {
+            "id": "VIOL-003",
+            "rule": "MISRA_C_2012_10_8",
+            "severity": "warning",
+            "file": "src/vehicle_control.c",
+            "line": 31,
+            "message": "Composite expression should be explicitly controlled to avoid unintended type conversion."
+        }
+    ]
+}
