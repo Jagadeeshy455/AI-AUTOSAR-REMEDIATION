@@ -1,10 +1,10 @@
 #include "sensor.h"
 
+static uint16_t default_sensor_value = 250U;
+
 uint16_t get_sensor_value(void)
 {
-    uint16_t sensor_value = 250U;
-
-    return sensor_value;
+    return default_sensor_value;
 }
 
 uint8_t is_sensor_valid(uint16_t value)

@@ -29,6 +29,15 @@
             "file": "src/vehicle_control.c",
             "line": 40,
             "message": "Composite expression should be explicitly controlled to avoid unintended type conversion."
+        },
+        {
+            "id": "VIOL-004",
+            "rule": "MISRA_C_2012_8_9",
+            "severity": "warning",
+            "language": "C",
+            "file": "src/sensor.c",
+            "line": 3,
+            "message": "Object should be defined at block scope if only used within one function."
         }
     ]
 }

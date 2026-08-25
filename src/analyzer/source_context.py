@@ -67,3 +67,20 @@ if __name__ == "__main__":
     )
 
     print(result)
+
+def extract_target_line(
+    source_file,
+    target_line: int
+) -> str:
+    """Extract the exact source-code statement at the target line."""
+
+    with open(source_file, "r", encoding="utf-8") as file:
+        lines = file.readlines()
+
+    if target_line < 1 or target_line > len(lines):
+        raise ValueError(
+            f"Target line {target_line} is outside "
+            f"the file range 1-{len(lines)}."
+        )
+
+    return lines[target_line - 1].strip()
